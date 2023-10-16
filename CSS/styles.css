@@ -4,6 +4,7 @@
     --SLATE: #434455;
     --CLOUD: #F4F4FD;
     --WHITE: #fff;
+    --GREY: #2e2f42;
 
 }
 
@@ -84,7 +85,9 @@
 }
 
 .hero {
-    background-color: var(--NAVYBLUE);
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url("../images/peopleoffice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 188px 472px;
 }
@@ -119,6 +122,14 @@
     gap: 24px;
     display: flex;
     align-items: center;
+}
+
+.icon {
+    border-radius: 4px;
+    background: var(--CLOUD, #F4F4FD);
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
 }
 
 .whatsection {
