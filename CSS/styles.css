@@ -5,7 +5,7 @@
     --CLOUD: #F4F4FD;
     --WHITE: #fff;
     --GREY: #2e2f42;
-
+    --OCEAN: #404BBF;
 }
 
 .header-container {
@@ -61,7 +61,7 @@
 }
 
 .navlink a:hover {
-    color: #4D5AE5;
+    color: var(--OCEAN);
 }
 
 .navcontact a {
