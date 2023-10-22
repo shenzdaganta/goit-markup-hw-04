@@ -6,6 +6,9 @@
     --WHITE: #fff;
     --GREY: #2e2f42;
     --OCEAN: #404BBF;
+    --LIGHTSLATE: #8E8F99;
+    --CORNFLOWER: #E7E9FC;
+
 }
 
 .header-container {
@@ -64,6 +67,10 @@
     color: var(--OCEAN);
 }
 
+.navlink a:focus {
+    color: var(--OCEAN);
+}
+
 .navcontact a {
     color:var(--SLATE);
     text-decoration: none;
@@ -118,13 +125,14 @@
 .herolist {
     list-style: none;
     padding-left: 0;
+    padding-top: 8px;
     margin-left: 156px;
     gap: 24px;
     display: flex;
     align-items: center;
 }
 
-.icon {
+.icon-hero {
     border-radius: 4px;
     background: var(--CLOUD, #F4F4FD);
     width: 264px;
@@ -132,6 +140,14 @@
     flex-shrink: 0;
     margin-top: 120px;
 }
+
+.icon-herosvg {
+    width: 64px;
+    height: 64px;
+    padding-left: 100px;
+    padding-top: 24px;
+}
+
 
 .whatsection {
     text-align: center;
@@ -245,6 +261,36 @@
    
 }
 
+.icon-customer {
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
+    list-style: none
+}
+
+.icon-customer {
+    fill: var(--LIGHTSLATE);
+}
+
+.iconcustomer {
+    border-radius: 4px;
+    border: 1px solid var(--LIGHTSLATE);
+    background-color: var(--WHITE);
+    width: 168px;
+    height: 88px;
+    flex-shrink: 0;
+    margin-top: 72px;
+    margin-bottom: 120px
+}
+
+.icon-customersvg {
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+}
+
+
 
 .footer {
     background-color: var(--NAVYBLUE);
@@ -285,18 +331,78 @@
 .footer-social {
     background: var(--IRIS);
     border-radius: 50%;
-    border: 40px;
+    padding: 16px;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 16px;
+
 }
+
 
 .footer-social {
     fill: var(--CLOUD);
 }
 
 .footersection {
+
     gap: 120px;
     display: inline-flex
     
+    
+}
+
+/* Portfolio Style  */
+
+.btnsection {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.btnport:hover {
+    border-radius: 4px;
+    border: 1px solid var(--CLOUD);
+    background: var(--IRIS);
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--WHITE);
+    padding: 12px 24px;
+}
+
+.btnport:focus {
+    border-radius: 4px;
+    border: 1px solid var(--CLOUD);
+    background: var(--IRIS);
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--WHITE);
+    padding: 12px 24px;
+}
+
+.btnport {
+    border-radius: 4px;
+    border: 1px solid var(--CLOUD);
+    background: var(--CLOUD)
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--IRIS);
+    padding: 12px 24px;
+}
+
+.servicesection {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+}
+
+.apptext {
+    padding-left: 16px;
 }
